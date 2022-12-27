@@ -1,5 +1,4 @@
 import React from 'react';
-// import { MainPage, CartPage } from '../pages';
 import AppHeader from '../app-header/app-header';
 import { Outlet } from "react-router-dom";
 import Background from './food-bg.jpg';

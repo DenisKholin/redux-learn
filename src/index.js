@@ -23,12 +23,13 @@ const router = createBrowserRouter([
 			},
 			{
 				index: true,
-				path: "main",
+				path: "/",
 				element: <MainPage />,
 			}
 		],
 	},
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	< Provider store={store} >
