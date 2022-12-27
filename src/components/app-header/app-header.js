@@ -1,17 +1,18 @@
 import React from 'react';
 import cartIcon from './shopping-cart-solid.svg';
 import './app-header.scss';
+import { Link } from 'react-router-dom';
 
 const AppHeader = ({ total }) => {
 	return (
 		<header className="header">
-			<i className="header__link">
+			<Link className="header__link" to='/main'>
 				Menu
-			</i>
-			<i className="header__link">
+			</Link>
+			<Link className="header__link" to='/cart'>
 				<img className="header__cart" src={cartIcon} alt="cart"></img>
 				Total: {total} $
-			</i>
+			</Link>
 		</header>
 	)
 };
